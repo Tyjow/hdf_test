@@ -1,0 +1,263 @@
+body {
+	margin: 0;
+}
+header {
+	width: 100%;
+	height: 100vh;
+	background-image: url("../img/Naturex6.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	transition: background-position 1s;
+}
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.effect {
+	background-position: 0 -200vh;
+}
+
+
+
+/***** Title *****/
+
+.title {
+	display: flex;
+	justify-content: flex-end;
+	background-color: transparent;
+	padding-bottom: 5em;
+	padding-top: 3em;
+	padding-right: 10em;
+	position: absolute;
+	right: 0;
+}
+.title-img {
+	padding-top: 5em;
+}
+.title-img img {
+	width: 20vw;
+}
+
+
+/***** Play *****/
+
+.play {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100%;
+	padding-top: 8em;
+}
+.inner-play {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.circle-play {
+	border-radius: 50%;
+	background-color: transparent;
+	border: 4px solid #fff;
+	width: 6.5em;
+	height: 6.5em;
+	cursor: pointer;
+}
+.circle-play:hover {
+	opacity: 0.8;
+}
+.inner-circle-play {
+	color: #fff;
+	padding-left: 0.5rem;
+}
+
+.text-play {
+	padding: 1em;
+}
+.inner-play .text-play p {
+	color: #fff;
+	font-size: 22px;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	font-weight: 200;
+	opacity: 0.8;
+}
+.inner-play:nth-of-type(2) .text-play p {
+	text-transform: initial;
+}
+
+
+
+
+/***** Navbar *****/
+
+.navbar-fixed {
+	top: 0;
+	z-index: 1;
+	position: fixed;
+	width: 100%;
+}
+.navbar-default {
+	bottom: 0;
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+}
+#nav-bar {
+	border: 0;
+	background-color: #fff;
+	border-radius: 0px;
+	margin-bottom: 0;
+}
+.navbar-content {
+	padding: 0.1em;
+}
+.nav-links {
+    margin: 0;
+    padding-left: 1em;
+}
+.nav-links li {
+	display: inline-block;
+}
+.nav-links li:nth-of-type(3) {
+	border-right: 1px solid rgba(0,0,0,0.4);
+	padding: 0.4em;
+}
+.navbar-logo {
+	padding: 0;
+	margin-top: 5px;
+}
+.navbar-logo img {
+	width: 8em;
+}
+.nav-links li a {
+	padding: 0 0.5em;
+	color: #000;
+	opacity: 0.6;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	word-spacing: -1px;
+}
+.navbar-search {
+	padding: 0.8em;
+}
+.search-button {
+	border: 1px solid #c18562;
+	background-color: #d78e63;
+	padding: 0.35em 0.6em;
+	color: #fff;
+	cursor: pointer;
+	margin-right: 0.3em;
+}
+.search-button i {
+	font-size: 0.7em;
+}
+.lang-button {
+	padding: 0.07em 0.6em;
+	border: 1px solid #51b1e0;
+}
+.text-lang span{
+	color: #000;
+	opacity: 0.6;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	padding-right: 0.5em;
+	padding-left: 0.5em;
+}
+.text-lang img {
+	opacity: 1;
+	cursor: pointer;
+}
+.caret {
+	border-left: 1px solid #51b1e0;
+	padding-left: 0.5em;
+	cursor: pointer;
+}
+.caret i {
+	color: #51b1e0;
+}
+
+/***** Slides ******/
+
+.slides {
+	top: -1.1em;
+	position: relative;
+    background-color: green;
+}
+.slides ul {
+	padding: 0;
+	display: flex;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	width: 100%;
+}
+.slides ul .first-slide {
+	width: 33%;
+	height: 100vh;
+	list-style: none;
+	background-image: url("../img/whoweare.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	cursor: pointer;
+	transition: all .5s;
+}
+.slides ul .second-slide {
+	width: 34%;
+	height: 100vh;
+	list-style: none;
+	background-image: url("../img/whatwedo.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	cursor: pointer;
+	transition: all .5s;
+}
+.slides ul .third-slide {
+	width: 33%;
+	height: 100vh;
+	list-style: none;
+	background-image: url("../img/howwedoit.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	cursor: pointer;
+	transition: all .5s;
+}
+.sec.open {
+	width: 66% !important;
+}
+.sec.closed {
+	width: 33% !important;
+}
+.second-slide.sec.closed {
+	width: 34% !important;
+}
+.sec.open .slides-content {
+	padding-top: 5em;
+	padding-right: 15em !important;
+
+}
+.pad {
+	padding-left: 2em;
+	transition: all .5s;
+}
+.slides-content {
+	padding-top: 5em;
+	transition: all .5s;
+}
+.title-slide {
+	flex-direction: column;
+	align-items: flex-start;
+}
+.description {
+	justify-content: flex-end;
+	padding-right: 5em;
+}

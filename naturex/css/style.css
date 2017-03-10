@@ -197,6 +197,7 @@ header {
 	margin-left: auto !important;
 	margin-right: auto !important;
 	width: 100%;
+	margin-top: 0;
 }
 .slides ul .first-slide {
 	width: 33%;

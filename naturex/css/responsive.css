@@ -24,6 +24,7 @@
 	}
 	.inner-play .text-play p {
 		font-size: 17px;
+		margin-bottom: 2em;
 	}
 
 	/** Navbar **/
@@ -120,6 +121,7 @@
 	}
 	.inner-play .text-play p {
 		font-size: 22px;
+		margin-bottom: 1em;
 	}
 
 	/** Navbar **/
